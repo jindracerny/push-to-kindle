@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Send to Kindle",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": [
+    "https://jindracerny.pythonanywhere.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {}
+}
