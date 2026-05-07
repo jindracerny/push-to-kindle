@@ -19,7 +19,7 @@ chrome.action.onClicked.addListener((tab) => {
   }).then(results => {
     const data = results[0].result;
     
-    fetch('https://jindracerny.pythonanywhere.com/send', {
+    fetch('https://<your-domain>.pythonanywhere.com/send', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)

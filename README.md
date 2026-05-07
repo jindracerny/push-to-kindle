@@ -26,6 +26,19 @@ This project allows you to send webpage content to your Kindle device via email.
       -d '{"title":"Test","body":"Hello Kindle"}'
     ```
 
+## Configuration
+
+Before deploying, you **must** substitute the following placeholders with your actual values:
+
+- **`<your-domain>`** in `manifest.json` and `background.js` → Replace with your PythonAnywhere username (e.g., `username` if your domain is `username.pythonanywhere.com`)
+- **`<your-pythonanywhere-domain>`** in the bookmarklet → Replace with your full PythonAnywhere domain (e.g., `username.pythonanywhere.com`)
+
+Example: If your PythonAnywhere domain is `myaccount.pythonanywhere.com`, change:
+- `https://<your-domain>.pythonanywhere.com/*` → `https://myaccount.pythonanywhere.com/*`
+- `https://<your-pythonanywhere-domain>.pythonanywhere.com/send` → `https://myaccount.pythonanywhere.com/send`
+
+Also configure your credentials in the `.env` file (see Setup section below).
+
 ## Setup
 
 ### 1. Backend (PythonAnywhere)
